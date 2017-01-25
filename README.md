@@ -3,7 +3,7 @@
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
 This buildpack is an [inline buildpack](https://github.com/kr/heroku-buildpack-inline/) (tldr: this repo deploys to Heroku and uses itself as a buildpack) for deploying [Mattermost](https://mattermost.org) to [Heroku](https://heroku.com).
-It must used in tandem with [This customized Nginx Buildpack](https://github.com/cadecairos/nginx-buildback).
+It must used in tandem with [This customized Nginx Buildpack](https://github.com/cadecairos/nginx-buildpack).
 
 Mattermost is not a [12 factor compatible app](http://12factor.net/config), so the startup script writes your Heroku environment variables to a config file when the dyno starts.
 
